@@ -11,7 +11,7 @@
 
 /* Generics */
 header {
-    height: 450px;
+    height: 75vh;
     background-color: #3161E0;
     text-align: center;
     padding: 20px 0;
@@ -24,9 +24,9 @@ nav li {
 
 section {padding: 15px;}
 
-h1, p, button {margin-bottom: 20px;}
+h1, h2, p, button {margin-bottom: 20px;}
 
-h1 {font-size: 40px;}
+h1, h2 {font-size: 40px;}
 
 button {margin: 0 10px;}
 
@@ -36,6 +36,21 @@ button {margin: 0 10px;}
 
 .flex-container {display: flex;}
 
+.container-green, .container-orange{
+    height: 300px;
+    padding: 20px;
+}
+.container-green{
+    width: 450px;
+    background-color: #29a039;
+    text-align: center;
+    line-height: calc(300px - 40px);
+}
+.container-orange{
+    background-color: #ce832e;
+    width: 300px;
+}
+
 .black-text {color: black;}
 
 .btn-primary {
@@ -44,7 +59,7 @@ button {margin: 0 10px;}
     padding: 5px 10px;
 }
 
-.border {border: 2px dashed white;}
+.border {border: 2px dashed black;}
 
 
 /* Header */
@@ -59,9 +74,22 @@ header div.flex-container {
     margin-bottom: 50px;
 }
 
-section.container {width: 600px;}
+header section.container {width: 600px;}
 
 
+/* Main */
+main > section:nth-child(even){
+    background-color: #929292;
+}
 
+main > section {
+    height: 90vh;
+}
 
-
+main > section div.flex-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
