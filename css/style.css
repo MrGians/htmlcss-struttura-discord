@@ -31,9 +31,9 @@ section {padding: 15px;}
 
 h1, h2, h3, p, button {margin-bottom: 20px;}
 
-h1, h2 {font-size: 40px;}
+h1, h2 {font-size: 36px;}
 
-h3 {font-size: 34px;}
+h3 {font-size: 32px;}
 
 button {margin: 0 10px;}
 
@@ -47,7 +47,7 @@ button {margin: 0 10px;}
 .flex-container {display: flex;}
 
 .container-green, .container-orange, .container-red {
-    height: 300px;
+    min-height: 300px;
     padding: 20px;
 }
 .container-green{
@@ -63,7 +63,7 @@ button {margin: 0 10px;}
 
 .container-red {
     background-color: #7a1616;
-    height: 150px;
+    min-height: 150px;
     width: 750px;
     text-align: center;
 }
@@ -84,7 +84,7 @@ button {margin: 0 10px;}
     height: 20px;
     width: 80px;
     text-align: center;
-    line-height: calc(20px - 4px)
+    line-height: calc(20px - 4px);
 }
 
 header div.flex-container {
@@ -131,7 +131,7 @@ footer section.container.flex-container:first-child {
     margin-bottom: 15px
 }
 
-footer h3 {font-size: 24px;}
+footer h3 {font-size: 26px;}
 
 .col-1, .col-2 {min-height: 150px;}
 
@@ -151,6 +151,8 @@ span.social-icon {
     height: 30px;
     width: 30px;
     background-color: #ce832e;
+    padding: 0 5px;
+    border-radius: 15px;
 }
 
 /* Second Column */
