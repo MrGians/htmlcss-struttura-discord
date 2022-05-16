@@ -24,9 +24,11 @@ nav li {
 
 section {padding: 15px;}
 
-h1, h2, p, button {margin-bottom: 20px;}
+h1, h2, h3, p, button {margin-bottom: 20px;}
 
 h1, h2 {font-size: 40px;}
+
+h3 {font-size: 34px;}
 
 button {margin: 0 10px;}
 
@@ -36,7 +38,7 @@ button {margin: 0 10px;}
 
 .flex-container {display: flex;}
 
-.container-green, .container-orange{
+.container-green, .container-orange, .container-red {
     height: 300px;
     padding: 20px;
 }
@@ -49,6 +51,13 @@ button {margin: 0 10px;}
 .container-orange{
     background-color: #ce832e;
     width: 300px;
+}
+
+.container-red {
+    background-color: #7a1616;
+    height: 150px;
+    width: 750px;
+    text-align: center;
 }
 
 .black-text {color: black;}
@@ -82,6 +91,8 @@ main > section:nth-child(even){
     background-color: #929292;
 }
 
+
+/* Main Sections */
 main > section {
     height: 90vh;
 }
@@ -93,3 +104,14 @@ main > section div.flex-container {
     justify-content: space-around;
     align-items: center;
 }
+
+
+/* Last Section of the Main */
+main > section:last-child {height: 150vh;}
+
+main > section:last-child > .flex-container {
+    flex-direction: column;
+}
+
+
+/* Footer */
