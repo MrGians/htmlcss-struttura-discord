@@ -3,9 +3,65 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
 }
 
+
 /* Generics */
+header {
+    height: 450px;
+    background-color: #3161E0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+section {padding: 15px;}
+
+h1, p, button {margin-bottom: 20px;}
+
+h1 {font-size: 40px;}
+
+button {margin: 0 10px;}
 
 
 /* Utilities */
+.container {margin: 0 auto;}
+
+.flex-container {display: flex;}
+
+.black-text {color: black;}
+
+.btn-primary {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.border {border: 2px dashed white;}
+
+
+/* Header */
+#logo {
+    height: 20px;
+    width: 80px;
+}
+
+header div.flex-container {
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+section.container {width: 600px;}
+
+
+
+
+
